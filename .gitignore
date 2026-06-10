@@ -1,0 +1,12 @@
+# XAMPP specific
+*.exe
+*.dll
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Sensitive
+config.php
+*.sql

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Exam Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Operating System test</h2>
+        <div class="form-box">
+            <h3>Login</h3>
+            <input type="text" id="roll_no" placeholder="Roll Number">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Start Exam</button>
+            <p>New student? <a href="#" onclick="showRegister()">Register here</a></p>
+        </div>
+        <div class="form-box" id="registerBox" style="display:none;">
+            <h3>Register</h3>
+            <input type="text" id="fullname" placeholder="Full Name">
+            <input type="text" id="new_roll" placeholder="Roll Number">
+            <input type="password" id="new_pass" placeholder="Password">
+            <button onclick="register()">Register</button>
+            <p><a href="#" onclick="hideRegister()">Back to Login</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

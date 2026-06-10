@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', sans-serif;
+}
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    color: white;
+}
+.form-box {
+    background: rgba(0,0,0,0.5);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+}
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+button {
+    background: #00b894;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #019874;
+}
+.question-card {
+    background: white;
+    color: black;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+.options label {
+    display: block;
+    margin: 8px;
+}
+.timer {
+    font-size: 1.5rem;
+    background: black;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 40px;
+}
