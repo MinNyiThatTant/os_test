@@ -1,4 +1,4 @@
-# OS_test
+# OS_test (php, mysql, html, css, javascript - web development)
 
 OS_test system for Operating System subject in Class room.
 Students can register, login, take tests, and see results.  
@@ -10,8 +10,8 @@ Admin can manage students, questions, and export results.
 ### Register
 ![Register](screenshots/register.PNG)
 
-### student_views
-![student_views](screenshots/student_views.PNG)
+### student_view
+![student_view](screenshots/student_views.PNG)
 
 ## Features
 - Student registration & login
