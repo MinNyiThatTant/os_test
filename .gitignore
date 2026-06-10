@@ -2,11 +2,30 @@
 *.exe
 *.dll
 *.log
+*.tmp
 
 # OS files
 Thumbs.db
 .DS_Store
+desktop.ini
 
-# Sensitive
-config.php
-*.sql
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+/logs/
+error_log
+access_log
+
+# Temp files
+/tmp/
+/temp/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
