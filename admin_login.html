@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Admin Login</h2>
+    <div class="form-box">
+        <h3>Login as Admin</h3>
+        <input type="text" id="username" placeholder="Admin Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="adminLogin()">Login</button>
+    </div>
+</div>
+<script>
+function adminLogin() {
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+    fetch("admin_auth.php", {
+        method: "POST",
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: `username=${user}&password=${pass}`
+    })
+    .then(res => res.text())
+    .then(data => {
+        if(data === "success") {
+            window.location.href = "admin_dashboard.php";
+        } else {
+            alert("Invalid admin credentials");
+        }
+    });
+}
+</script>
+</body>
+</html>
