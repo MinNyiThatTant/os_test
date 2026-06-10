@@ -35,3 +35,9 @@ Admin can manage students, questions, and export results.
 ## Usage
 - Teacher creates WiFi hotspot
 - Students connect and browse to teacher's IP
+
+
+## License
+
+This project is developed for educational and research purposes.
+All Rights Reserved.
