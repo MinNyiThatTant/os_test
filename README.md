@@ -4,6 +4,15 @@ OS_test system for Operating System subject in Class room.
 Students can register, login, take tests, and see results.  
 Admin can manage students, questions, and export results.
 
+### Login
+![Login](screenshots/login.PNG)
+
+### Register
+![Register](screenshots/register.PNG)
+
+### student_views
+![student_views](screenshots/student_views.PNG)
+
 ## Features
 - Student registration & login
 - Timed each test (15 min)
