@@ -15,10 +15,12 @@ Admin can manage students, questions, and export results.
 
 ## Features
 - Student registration & login
-- Timed each test (15 min)
+- Multiple test categories (Test 1, Test 2, Test 3...)
+- One-time attempt per test (prevents retake)
+- Timed exam (15 minutes)
 - Auto-score calculation
-- Admin dashboard with CRUD
-- CSV export results
+- Admin dashboard management
+- CSV export of results
 
 ## Technologies
 - HTML, CSS, JavaScript

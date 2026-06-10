@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login - OS Exam</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Admin Login</h2>
+    <div class="form-box">
+        <h3>Admin Login</h3>
+        <input type="text" id="username" placeholder="Username" value="admin">
+        <input type="password" id="password" placeholder="Password" value="admin123">
+        <button onclick="login()">Login</button>
+        <div id="errorMsg" style="color: #ff9999; margin-top: 10px;"></div>
+    </div>
+</div>
+
+<script>
+async function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    
+    document.getElementById("errorMsg").innerHTML = "Logging in...";
+    
+    try {
+        let response = await fetch("../api/login_admin.php", {
+            method: "POST",
+            headers: {"Content-Type": "application/x-www-form-urlencoded"},
+            body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
+        });
+        
+        let text = await response.text();
+        console.log("Response:", text);
+        
+        if (text.trim() === "success") {
+            window.location.href = "dashboard.php";
+        } else {
+            document.getElementById("errorMsg").innerHTML = "Invalid username or password";
+        }
+    } catch(error) {
+        console.error("Error:", error);
+        document.getElementById("errorMsg").innerHTML = "Connection error: " + error.message;
+    }
+}
+</script>
+</body>
+</html>
