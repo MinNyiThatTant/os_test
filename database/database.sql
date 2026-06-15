@@ -47,19 +47,19 @@ CREATE TABLE IF NOT EXISTS student_attempts (
 
 -- Categories
 INSERT INTO categories (name, description) VALUES
-('Test 1 - Cloud Computing Basics', 'Fundamental cloud computing concepts - 10 questions'),
-('Test 2 - Cloud Service Models', 'IaaS, PaaS, SaaS and deployment models - 15 questions'),
-('Test 3 - Cloud Security & Management', 'Cloud security, compliance, and management - 12 questions');
+('Test 1 - Basic OS', 'Fundamental OS concepts - 10 questions'),
+('Test 2 - Process Management', 'Process scheduling, threads - 15 questions'),
+('Test 3 - Memory Management', 'Paging, segmentation, virtual memory - 12 questions');
 
 -- Sample Questions for Test 1 (category_id = 1)
-IINSERT INTO questions (category_id, question_text, option_a, option_b, option_c, option_d, correct_answer) VALUES
-(1, 'What is cloud computing?', 'Storing files on local hard drive', 'Delivering computing services over the internet', 'Installing software on a single computer', 'Using a physical server in office', 'B'),
-(1, 'Which of the following is NOT a characteristic of cloud computing?', 'On-demand self-service', 'Broad network access', 'Limited scalability', 'Resource pooling', 'C'),
-(1, 'What does "pay-as-you-go" mean in cloud computing?', 'Pay monthly fixed fee only', 'Pay only for resources you actually use', 'Free for first year only', 'Pay based on company size', 'B'),
-(1, 'Which is a major cloud service provider?', 'Microsoft Office', 'Amazon Web Services (AWS)', 'Google Chrome', 'Mozilla Firefox', 'B'),
-(1, 'What is a public cloud?', 'Cloud owned by a single organization', 'Cloud only for government use', 'Cloud open to general public', 'Cloud requiring special permission', 'C'),
-(1, 'What is a private cloud?', 'Cloud used only by one organization', 'Cloud free for everyone', 'Cloud with no security', 'Cloud for gaming only', 'A'),
-(1, 'What is a hybrid cloud?', 'Combination of public and private cloud', 'Only public cloud', 'Only private cloud', 'No internet connection', 'A'),
-(1, 'Which of these is a benefit of cloud computing?', 'Higher hardware costs', 'Limited accessibility', 'Elasticity (scale up/down as needed)', 'Redundant local servers only', 'C'),
-(1, 'What is multi-tenancy in cloud computing?', 'Single user per system', 'Multiple customers sharing same infrastructure', 'Ten different servers required', 'No sharing allowed', 'B'),
-(1, 'Which company offers "Azure" cloud platform?', 'Amazon', 'Google', 'Microsoft', 'IBM', 'C');
+INSERT INTO questions (category_id, question_text, option_a, option_b, option_c, option_d, correct_answer) VALUES
+(1, 'What is the main function of an Operating System?', 'Manage hardware resources', 'Browse the internet', 'Edit documents', 'Play games', 'A'),
+(1, 'Which of the following is NOT an OS?', 'Windows', 'Linux', 'Chrome', 'macOS', 'C'),
+(1, 'What does CPU stand for?', 'Computer Processing Unit', 'Central Processing Unit', 'Core Program Unit', 'Control Process Unit', 'B'),
+(1, 'Which scheduling algorithm is preemptive?', 'FCFS', 'SJF (non-preemptive)', 'Round Robin', 'LIFO', 'C'),
+(1, 'What is a process?', 'Program in execution', 'File on disk', 'Memory partition', 'User command', 'A'),
+(1, 'What is RAM?', 'Readily Available Memory', 'Random Access Memory', 'Rapid Access Module', 'Read Access Memory', 'B'),
+(1, 'Which is a example of OS?', 'Linux', 'Python', 'Chrome', 'MS Word', 'A'),
+(1, 'What is the kernel?', 'Core of OS', 'User interface', 'File system', 'Security module', 'A'),
+(1, 'What is multitasking?', 'Running multiple programs at once', 'Multiple CPUs', 'Multiple users', 'Multiple files', 'A'),
+(1, 'Which is a CLI?', 'Command Prompt', 'Windows Explorer', 'Desktop', 'Taskbar', 'A');
