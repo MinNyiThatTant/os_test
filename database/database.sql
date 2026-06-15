@@ -1,6 +1,6 @@
 -- Create Database
-CREATE DATABASE IF NOT EXISTS cloud_db;
-USE cloud_db;
+CREATE DATABASE IF NOT EXISTS os_exam_db;
+USE os_exam_db;
 
 -- Students table
 CREATE TABLE IF NOT EXISTS students (
