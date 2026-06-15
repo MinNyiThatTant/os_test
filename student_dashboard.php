@@ -12,7 +12,7 @@ $student_name = $_SESSION['student_name'] ?? 'Student';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Student Dashboard - OS Exam</title>
+    <title>Student Dashboard</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .test-card {
@@ -62,9 +62,9 @@ $student_name = $_SESSION['student_name'] ?? 'Student';
 </head>
 <body>
 <div class="container" style="max-width: 800px;">
-    <h2>Welcome, <?php echo htmlspecialchars($student_name); ?>!</h2>
+    <h2>Welcome <?php echo htmlspecialchars($student_name); ?></h2>
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-        <p>Click on any available test to begin:</p>
+        <p>Click available test:</p>
         <button class="refresh-btn" onclick="location.reload()">Refresh</button>
     </div>
     <div id="testsList">
