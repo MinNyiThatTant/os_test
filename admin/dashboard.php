@@ -6,7 +6,7 @@ require_once 'auth.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Dashboard</title>
+    <title>Admin Dashboard </title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
         .admin-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
